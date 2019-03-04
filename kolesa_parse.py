@@ -46,7 +46,7 @@ class bothandler:
 token = "709320970:AAGYB30J43aymiYu2VTCBa9uKHCJsfXNLSc"
 
 greet_bot = bothandler(token)
-greetings = (263033818)
+greetings = (263033818, )
 
 def get_html(url):
     response = requests.get(url)
@@ -105,7 +105,7 @@ def main():
                     ids_dict.update({div['id']:[str(href), '  '+str(price), str(name), str(info), str(date)]})
                     # vkapi.messages.send(domain='id204817379', message=ids_dict[div['id']], v=3)
                     greet_bot.send_message(greetings[0], ids_dict[div['id']])
-                    greet_bot.send_message(greetings[1], ids_dict[div['id']])
+
 
             print(time.time()-t, 'sec', "One iteration time")
     except Exception as e:
