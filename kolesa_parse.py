@@ -46,7 +46,7 @@ class bothandler:
 token = "709320970:AAGYB30J43aymiYu2VTCBa9uKHCJsfXNLSc"
 
 greet_bot = bothandler(token)
-greetings = ('472717315', '671788131')
+greetings = ('263033818')
 
 def get_html(url):
     response = requests.get(url)
